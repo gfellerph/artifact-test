@@ -27,10 +27,10 @@ jobs:
       - name: Download artifact
         uses: dawidd6/action-download-artifact@v2
         with:
-          path: ./
+          path: download
           run_id: ${{ github.event.workflow_run.id }}
           workflow_conclusion: success
       - run: ls -R
-      - run: unzip test/testfiles.zip
+      - run: unzip download/testfiles.zip
       - name: Log
         run: ls -R

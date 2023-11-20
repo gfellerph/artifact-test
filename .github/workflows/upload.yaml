@@ -23,7 +23,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@4
+      - uses: actions/checkout
       - run: zip testfiles.zip ./testfiles/ -r
       - name: Upload artifact
         uses: actions/upload-artifact@v3

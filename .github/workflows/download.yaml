@@ -32,6 +32,6 @@ jobs:
           workflow_conclusion: success
       - run: ls -R
       - run: unzip testfiles.zip -d download
-      - run: rm -r test
+      - run: rm -r testfiles.zip
       - name: Log
         run: ls -R

@@ -23,7 +23,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: zip testfiles.zip testfiles/ -r
+      - run: zip testfiles.zip ./testfiles/ -r
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:

@@ -28,8 +28,9 @@ jobs:
         uses: dawidd6/action-download-artifact@v2
         with:
           name: test
-          path: testfiles.zip
+          path: testfiles/
           run_id: ${{ github.event.workflow_run.id }}
           workflow_conclusion: success
+      - run: unzip testfiles.zip
       - name: Log
         run: ls -R

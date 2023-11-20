@@ -1,0 +1,33 @@
+###
+#
+# If you need to do some changes in a local-action used in this
+# workflow, make sure you change the action-flag to your working
+# branch-name to get the latest action functionality.
+#
+# Example: swisspost/design-system/.github/actions/setup-environment-pnpm@my-working-branch-name
+#
+# Don't forget to change the action-flag back to 'main',
+# once you have finished your work on the local-action!
+#
+# https://docs.github.com/en/actions/creating-actions/about-custom-actions#using-release-management-for-actions
+#
+###
+
+name: Artifact Download
+
+on:
+  workflow_run:
+    workflows: ["Artifact Upload"]
+    types: [completed]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: test
+          path: testfiles
+      - name: Log
+        run: ls -R

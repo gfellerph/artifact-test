@@ -31,7 +31,7 @@ jobs:
           run_id: ${{ github.event.workflow_run.id }}
           workflow_conclusion: success
       - run: ls -R
-      - run: unzip test/testfiles.zip -d download
+      - run: unzip testfiles.zip -d download
       - run: rm -r test
       - name: Log
         run: ls -R

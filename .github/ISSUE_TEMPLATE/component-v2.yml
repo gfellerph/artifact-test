@@ -1,14 +1,18 @@
 name: Component v2
 description: Add a working item for a component targeted at the new Design v2
-title: "Component v2"
+title: "[component]: "
 labels: ["enhancment"]
 projects: []
 assignees: []
 body:
-  - type: markdown
+  - type: textarea
+    id: description
     attributes:
-      value: |
-        Short component description
+      label: Description
+      description: A short description of the component, disambiguation if needed
+      placeholder: A tooltip shows short, additional information on focusable elements.
+    validations:
+      required: false
   - type: input
     id: designurl
     attributes:
@@ -16,14 +20,6 @@ body:
       description: Link to the component in Figma
     validations:
       required: true
-  - type: textarea
-    id: description
-    attributes:
-      label: Short description
-      description: A short description of the component, disambiguation if needed
-      placeholder: A tooltip shows short, additional information on focusable elements.
-    validations:
-      required: false
   - type: checkboxes
     id: tokens
     attributes:

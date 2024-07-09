@@ -1,17 +1,8 @@
----
-name: Component v2
-about: Component v2 description
-title: ''
-labels: enhancement
-assignees: ''
-
----
-
 name: Component v2
 description: Add a working item for a component targeted at the new Design v2
 title: ""
-labels: ["bug"]
-projects: ["swisspost/3"]
+labels: ["enhancment"]
+projects: []
 assignees:
 body:
   - type: markdown

@@ -32,10 +32,10 @@ body:
     attributes:
       label: Tasks
       value: |
-          ```[tasklist]
-          ### Tasks
-          - [ ] HTML/CSS implementation
-          - [ ] Web component implementation
-          - [ ] Documentation in Storybook
-          - [ ] Design review
-          ```
+        ```[tasklist]
+        ### Tasks
+        - [ ] HTML/CSS implementation
+        - [ ] Web component implementation
+        - [ ] Documentation in Storybook
+        - [ ] Design review
+        ```

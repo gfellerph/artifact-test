@@ -3,7 +3,7 @@ description: Add a working item for a component targeted at the new Design v2
 title: "Component v2"
 labels: ["enhancment"]
 projects: []
-assignees:
+assignees: []
 body:
   - type: markdown
     attributes:
@@ -29,3 +29,5 @@ body:
     attributes:
       label: Tokens are ready
       description: Indicates whether tokens already exist for this component
+      options:
+        - label: Tokens for this component are ready

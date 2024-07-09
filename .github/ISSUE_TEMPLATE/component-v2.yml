@@ -23,7 +23,19 @@ body:
   - type: checkboxes
     id: tokens
     attributes:
-      label: Tokens are ready
+      label: Tokens
       description: Indicates whether tokens already exist for this component
       options:
         - label: Tokens for this component are ready
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tasks
+      value: |
+          ```[tasklist]
+          ### Tasks
+          - [ ] HTML/CSS implementation
+          - [ ] Web component implementation
+          - [ ] Documentation in Storybook
+          - [ ] Design review
+          ```
